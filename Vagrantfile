@@ -8,7 +8,8 @@ Vagrant.configure("2") do |config|
   config.vm.network :forwarded_port, guest: 80, host: 8080
   config.vm.network :forwarded_port, guest: 443, host: 4443
   config.vm.provider :virtualbox do |vb|
-    vb.customize ["modifyvm", :id, "--memory", "1024"]
+    vb.customize ["modifyvm", :id, "--memory",  "1024"]
+    vb.customize ["modifyvm", :id, "--cpus",    "2"]
   end
   config.vm.provision :puppet do |puppet|
     puppet.module_path = "modules"
