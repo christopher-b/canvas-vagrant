@@ -1,0 +1,9 @@
+production:
+  # replace this with a random string of at least 20 characters
+  encryption_key: "m25Y9HmKOTL1M6SFnsAr"
+
+development:
+  encryption_key: "dz3hNOL5eakazZFlBhyg"
+
+test:
+  encryption_key: "NHDR3dVpsseG9fXs1AuN"

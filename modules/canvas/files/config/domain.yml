@@ -1,0 +1,12 @@
+test:
+  domain: "canvas-lms.dev::8080"
+
+development:
+  domain: "canvas-lms.dev:8080"
+
+production:
+  domain: "canvas-lms.dev:8080"
+  # whether this instance of canvas is served over ssl (https) or not
+  # defaults to true for production, false for test/development
+  ssl: true
+  # files_domain: "canvasfiles.example.com"

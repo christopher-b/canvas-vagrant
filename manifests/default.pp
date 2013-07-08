@@ -1,0 +1,1 @@
+class{'canvas': destination => '/vagrant/canvas', }
