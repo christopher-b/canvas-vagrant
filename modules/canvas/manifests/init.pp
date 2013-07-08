@@ -24,11 +24,11 @@ class canvas (
   class { 'canvas::code':
     destination => $destination,
     source      => $source,
-    require     => Class['Canvas::Dependencies'],
     stage       => main
   }
   class { 'canvas::jobs':
-    destination => $destination
+    destination => $destination,
+    require     => Class['canvas::code']
   }
   class { 'canvas::tasks':
     environment => $environment,
